@@ -28,7 +28,9 @@ package com.dicoding.exam.latihanopsional2
  */
 
 fun minAndMax(number: Int): Int {
-    return 0
+    val minDig = number.toString().minOrNull()?.toString()?.toInt() ?: 0
+    val maxDig = number.toString().maxOrNull()?.toString()?.toInt() ?: 0
+    return minDig + maxDig
 }
 
 fun main() {
